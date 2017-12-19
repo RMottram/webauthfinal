@@ -38,34 +38,31 @@ window.onload = function()
     localStorage.setItem('background', colour);
   });
 
-  if (localStorage.clickcount)
-  {
-    localStorage.clickcount = Number(localStorage.clickcount)+1;
-  }
-  else
-  {
-    localStorage.clickcount = 1;
-  }
-
+  var countClicks = localStorage.clickcount;
   function clickCounter()
   {
     console.log('click counted');
-    if ()
     if (typeof(Storage) !== "undefined")
     {
-      if (localStorage.clickcount)
+      if (countClicks)
       {
-      localStorage.clickcount = Number(localStorage.clickcount)+1
+      countClicks = Number(countClicks)+1
       }
       else
       {
-        localStorage.clickcount = 1;
+        countClicks = 1;
       }
-        document.getElementById("result").innerHTML = "You have clicked the CD " + localStorage.clickcount + " time(s).";
+        document.getElementById("result").innerHTML = "You have clicked the CD " + countClicks + " time(s).";
     }
       else
       {
         document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage";
+      }
+      if (countClicks == 100)
+      {
+        $('body').css('cursor', 'url(assets/bad-vibs-cd.png),auto');
+        alert("Message");
+        console.log('clickcount limit reached');
       }
     }
 
