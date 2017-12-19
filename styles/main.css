@@ -1,0 +1,743 @@
+/* MAIN CSS FILE */
+
+html
+{
+
+  font-size: 62.5%;
+  min-width: 100%;
+  min-height: 100%;
+  font-family: 'montserrat-light', sans-serif;
+  background: rgb(60, 55, 60);
+
+}
+
+body
+{
+
+  /* NO MARGIN AROUND THE WHOLE BODY ELEMENT */
+  margin: 0;
+  height: 100%;
+
+}
+
+.wrapper
+{
+  position: relative;
+  min-height: 100%;
+}
+
+/* PROPERTIES FOR SMALL SCREEN BANNERS */
+.small-screen-banner
+{
+  display: none; /* OUT OF SIGHT UNTIL MEDIA QUERY KICKS IN */
+  position: relative;
+  width: 80%;
+  height: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.small-screen-album
+{
+  display: none;
+  position: relative;
+  width: 60%;
+  height: 60%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 40px;
+}
+
+.top-banner
+{
+
+  display: block;
+  margin-bottom: 5%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  border-radius: 8px;
+  width: auto;
+  height: auto;
+
+}
+
+#setColour
+{
+  display: block;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+  clear: both;
+}
+
+#colourPickerText p, #result
+{
+  text-align: center;
+  font-size: 1.6em;
+  color: #f7f7f7;
+}
+
+#cd
+{
+  cursor: pointer;
+  background-color: rgba(60, 55, 60, 0);
+  border: none;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+  -webkit-animation-name: spin;
+  -webkit-animation-duration: 5s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+
+@-webkit-keyframes spin
+{
+  from { -webkit-transform: rotate(0deg); }
+  to { -webkit-transform: rotate(360deg); }
+}
+
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 768px)
+{
+  /* DISPLAYS SMALL BANNER AND HIDES LARGE BANNER */
+  .top-banner
+  {
+    display: none;
+  }
+
+  .small-screen-banner
+  {
+    display: block;
+  }
+
+  /* HIDES VIDEO FOR SMALL SCREENS */
+  .video
+  {
+    display: none;
+  }
+
+  /* HIDES FLIPPER FOR SMALL SCREEN AND DISPLAYS THE FRONT AND BACK IMAGES SEPARATELY */
+  .album-cover
+  {
+    display: none;
+  }
+
+  .small-screen-album
+  {
+    display: block;
+    margin-bottom: 10%;
+  }
+
+  .flip-container
+  {
+    display: none;
+  }
+
+  /* HIDES THE COLOUR PICKER AND SPINNING ALBUM BUTTON FOR SMALL SCREENS */
+  #result, #colourPickerText, button
+  {
+    display: none;
+  }
+
+}
+
+@media only screen and (min-width: 300px) and (max-width: 400px)
+{
+  /* ADAPTS THE NAV TO SUIT SMALLER SCREENS */
+  li
+  {
+    float: left;
+  }
+}
+
+/* MEDIA QUERIES END */
+
+/* START NAVBAR */
+
+ul
+{
+
+  list-style-type: none;
+  margin: 0;
+  padding: 10;
+  overflow: hidden;
+  background-color: rgba(150, 150, 150, .2);
+  text-align: center;
+  font-size: 1.6rem;
+  font-family: 'helvetica-bold', sans-serif;
+
+}
+
+li
+{
+
+  display: inline-block;
+
+}
+
+li a, .dropbtn
+{
+
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+
+}
+
+li:hover
+{
+
+  background-color: rgb(230, 150, 50);
+
+}
+
+
+li.dropdown
+{
+
+  display: inline-block;
+  cursor: default;
+
+}
+
+.dropdown-content
+{
+
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,.6);
+  z-index: 1;
+
+}
+
+.dropdown-content a
+{
+
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+
+}
+
+.dropdown-content a:hover
+{
+
+  background-color: rgb(230, 150, 50);
+
+}
+
+#atnwt-hover:hover
+{
+
+  background-image: url(../assets/atnwt.jpg);
+  transition: ease-in .1s;
+  transform: scale(1.1);
+  background-size: cover;
+
+}
+
+#wsmfy-hover:hover
+{
+
+background-image: url(../assets/wsmfy.jpg);
+transition: ease-in .1s;
+transform: scale(1.1);
+background-size: cover;
+
+}
+
+#ftwhh-hover:hover
+{
+
+background-image: url(../assets/ftwhh.jpg);
+color: #F7F7F7;
+transition: ease-in .1s;
+transform: scale(1.1);
+background-size: cover;
+
+}
+
+#homesick-hover:hover
+{
+
+background-image: url(../assets/homesick.jpg);
+color: #F7F7F7;
+transition: ease-in .1s;
+transform: scale(1.1);
+
+}
+
+#cc-hover:hover
+{
+
+background-image: url(../assets/common_c.jpg);
+transition: ease-in .1s;
+transform: scale(1.1);
+background-size: cover;
+
+}
+
+#bad_vib-hover:hover
+{
+
+background-image: url(../assets/bad-vibrations.jpg);
+background-size: cover;
+color: #F7F7F7;
+
+transition: ease-in .1s;
+transform: scale(1.1);
+background-size: cover;
+
+}
+
+.dropdown:hover .dropdown-content
+{
+
+  display: block;
+
+}
+
+/* END NAVBAR */
+
+/* START HOME PAGE */
+
+/* FLIP CARD EFFECT START */
+
+/* entire container, keeps perspective */
+.flip-container
+{
+
+	-webkit-perspective: 1000px;
+
+}
+
+	/* flip the pane when hovered */
+.flip-container:hover .flipper, .flip-container.hover .flipper
+{
+
+	-webkit-transform: rotateY(-180deg);
+
+}
+
+.flip-container, .front, .back
+{
+
+	width: 600px;
+	height: 600px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  padding-top: 2%;
+  padding-bottom: 15%;
+
+
+}
+
+/* flip speed goes here */
+.flipper
+{
+
+	-webkit-transition: 0.6s;
+	-webkit-transform-style: preserve-3d;
+  position: relative;
+
+}
+
+/* hide back of pane during swap */
+.front, .back
+{
+
+	-webkit-backface-visibility: hidden;
+
+	position: absolute;
+
+}
+
+/* front pane, placed above back */
+.front
+{
+
+	z-index: 2;
+	/* for firefox 31 */
+	-webkit-transform: rotateY(0deg);
+
+}
+
+/* back, initially hidden pane */
+.back
+{
+
+	-webkit-transform: rotateY(180deg);
+
+}
+
+/* FLIP CARD EFFECT END */
+
+/* VIDEO ON HOME PAGE START */
+#welcome-vid
+{
+
+  display: block;
+  position: relative;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 8px;
+  box-shadow: 2px 2px 6px black;
+
+}
+
+.video
+{
+
+  width: 1000px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+/* HOME PAGE VIDEO END */
+
+/* END HOME PAGE */
+
+/* FOOTER START */
+
+footer
+{
+
+  position: relative;
+  bottom: 0;
+  height: 40px;
+  width: 100%;
+  overflow: hidden;
+  background-color: rgba(150, 150, 150, .2);
+  text-align: center;
+
+}
+
+.extra-links
+{
+
+  display: inline-block;
+  padding: 10px;
+  text-decoration: none;
+  color: #f7f7f7;
+
+}
+
+footer img
+{
+
+  float: left;
+  display: inline-block;
+  filter: grayscale();
+  margin-left: .5%;
+  margin-top: .15%;
+
+}
+
+footer img:hover
+{
+
+  filter: none;
+
+}
+
+footer .partners
+{
+
+  float: right;
+  display: inline-block;
+  margin-right: .5%;
+  margin-top: .15%;
+
+}
+
+@media only screen and (max-width: 500px)
+{
+  footer
+  {
+    padding-top: 40px;
+    height: 80px;
+    overflow: hidden;
+  }
+
+  .extra-links
+  {
+
+    display: inline-block;
+
+  }
+
+  footer img
+  {
+
+    display: inline-block;
+    margin: 0;
+
+  }
+
+  footer .partners
+  {
+
+    display: inline-block;
+    margin: 0;
+
+  }
+}
+
+/* FOOTER END */
+
+/* ALBUM PAGES START */
+
+.album-vid
+{
+  display: block;
+  position: relative;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 8px;
+  box-shadow: 2px 2px 6px black;
+}
+
+.album-cover
+{
+
+  transition: .4s ease-in;
+  -webkit-transition: .4s ease-in; /* FOR SAFARI AND CHROME */
+  -moz-transition: .4s ease-in; /* FOR FIREFOX */
+  -o-transition: .4s ease-in; /* FOR OPERA */
+  -ms-transition: .4s ease-in; /* FOR EDGE AND IE */
+  width: 600px;
+  height: 600px;
+
+}
+
+.album-cover:hover
+{
+
+  box-shadow: 2px 2px 6px black;
+  -webkit-transform: scale(1.2); /* FOR SAFARI AND CHROME */
+  -o-transform: scale(1.2); /* FOR OPERA */
+  -ms-transform: scale(1.2); /* FOR EDGE AND IE */
+  -moz-transform: scale(1.2); /* FOR FIREFOX */
+
+}
+
+.album-tracks
+{
+
+  margin-bottom: 10%;
+  margin-right: 42%;
+
+}
+
+/* ALBUM PAGES END */
+
+/* BAND PAGE SECTION */
+
+/* PUTTING THE FIGURES IN A ROW */
+
+#band-members
+{
+
+  align-items: center;
+  max-height: 80%;
+
+}
+
+#band-members figure
+{
+
+  margin-top: 5%;
+  display: inline-block;
+  margin-left: auto;
+  margin-right:auto;
+  color: #F7F7F7;
+  font-size: 1.6em;
+  text-align: center;
+  line-height: 160%;
+
+}
+
+#band-members, #whole-band p
+{
+
+  max-width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+#band-members figure img
+{
+
+  box-shadow: 4px 4px 50px black;
+  border-radius: 8px;
+  width: 60%;
+  height: 60%;
+
+}
+
+#whole-band figure
+{
+
+  display: inline-block;
+  margin-left: auto;
+  margin-top: 5%;
+  color: #F7F7F7;
+  font-size: 1.6em;
+  text-align: center;
+  line-height: 160%;
+
+}
+
+#whole-band figure img
+{
+
+  box-shadow: 4px 4px 50px black;
+  border-radius: 8px;
+  width: 60%;
+  height: 60%;
+
+}
+
+/* BAND PAGE END */
+
+/* PLAYLIST PAGE START */
+
+input
+{
+  cursor: pointer;
+  display: inline;
+  height: 30px;
+  width: 50px;
+  background-color: #46325A;
+  border-radius: 8px;
+  border-color: black;
+  border-style: solid;
+  color: #F7F7F7
+}
+
+.playlist-para
+{
+  display: inline;
+  color: #F7F7F7;
+  font-size: 1.6em;
+  padding-right: 20px;
+}
+
+#playlist-tracks
+{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  width: auto;
+  height: auto;
+  text-align: center;
+}
+
+.track-name
+{
+  align-items: center;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+}
+
+h1
+{
+  color: #F7F7F7;
+  text-align: center;
+  font-size: 2em;
+  font-weight: normal;
+
+}
+
+iframe
+{
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  box-shadow: 4px 4px 50px black;
+}
+
+/* PLAYLIST PAGE END */
+
+/* REPORT PAGE START */
+
+.report h4
+{
+
+  text-align: center;
+
+}
+
+.report p
+{
+  text-align: left;
+  color: #f7f7f7;
+}
+
+.report
+{
+
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto  ;
+  margin-top: 5%;
+  color: #F7F7F7;
+  font-size: 1.6em;
+  text-align: left;
+  line-height: 160%;
+  max-width: 40%;
+  font-family: helvetica;
+  font-weight: lighter;
+
+}
+
+.report .heading
+{
+
+  text-align: left;
+
+}
+
+#report-images p
+{
+  text-align: center;
+  color: #f7f7f7;
+}
+
+.figures
+{
+  height: 100%;
+  width: 100%;
+  box-shadow: 4px 4px 50px black;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+/* REPORT PAGE END */

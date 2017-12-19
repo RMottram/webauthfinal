@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en" changeCursor()>
+
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> ADTR Home Page </title>
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+    <link rel="stylesheet" href="styles/animate.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+  </head>
+
+  <body>
+    <div class="wrapper">
+
+    <header>
+
+      <!-- START NAV -->
+      <nav>
+        <ul>
+          <li><a href="home.html">HOME</a></li>
+          <li class="dropdown"><a>ALBUMS &nbsp; &nbsp; &#9662;</a>
+            <div class="dropdown-content">
+              <a href="atnwt.html" id="atnwt-hover">And Their Name Was Treason</a>
+              <a href="ftwhh.html" id="ftwhh-hover">For Those Who Have Heart</a>
+              <a href="homesick.html" id="homesick-hover">Homesick</a>
+              <a href="wsmfy.html" id="wsmfy-hover">What Separates Me From You</a>
+              <a href="cc.html" id="cc-hover">Common Courtesy</a>
+              <a href="bad_vib.html" id="bad_vib-hover">Bad Vibrations</a>
+            </div>
+          </li>
+          <li><a href="band.html">THE BAND</a></li>
+          <li><a href="playlist.html">YOUR PLAYLIST</a></li>
+        </ul>
+      </nav>
+      <!-- END NAV -->
+
+    </header>
+
+    <!-- BANNER FOR LARGE SCREEN DEVICES -->
+    <img src="assets/topbanner2.png" alt="top banner" class="animated slideInDown top-banner">
+    <!-- BANNER FOR SMALLER SCREEN DEVICES -->
+    <img src="assets/adtrslant.png" alt="small screen banner" class="small-screen-banner animated slideInDown">
+
+    <!-- FLIPPER CONTAINER -->
+    <div class="flip-container animated flipInY">
+      <div class="flipper">
+        <div class="front">
+          <img class="album-cover" alt="front flipper image" src="assets/bad-vibrations.jpg" height="600" width="600"> <!-- FRONT IMAGE -->
+        </div>
+        <div class="back">
+          <img class="album-cover" alt="back flipper image" src="assets/bad-vibrationsback.jpg" height="600" width="600"> <!-- BACK IMAGE WHEN FLIPPED -->
+        </div>
+      </div>
+    </div>
+
+    <!-- SMALL SCREEN ALBUM IMAGES -->
+    <img class="small-screen-album animated flipInY" alt="album image small screens" src="assets/bad-vibrations.jpg">
+
+    <img class="small-screen-album animated flipInY" alt="back image small screen" src="assets/bad-vibrationsback.jpg">
+
+    <!-- ALBUM MUSIC VIDEO FOR SINGLE -->
+    <div class="animated zoomIn video">
+      <video id="welcome-vid" width="960" height="540" muted controls autoplay loop>
+      <source src="assets/videos/We-Got-This-ov.mp4" type="video/mp4">
+      </video>
+    </div>
+
+    <!-- COLOUR PICKER TO CHANGE BACKGROUND COLOR OF WEBSITE
+    DATA SAVED IN LOCALSTORAGE SO IT SAVES AFTER CLOSING -->
+    <div id="colourPickerText">
+      <p>Fancy a change of scenery? Use the colour picker below to change the colour of the website to suit you</p>
+      <input value="#3C373C" type="color" id="setColour"/>
+    </div>
+
+    <!-- IMAGE BUTTON TO CHANGE THE CURSOR INTO IMAGE
+    DATA SAVED IN LOCALSTORAGE -->
+    <button id="cd" type="button"><img alt="bad vibrations cd" src="assets/bad-vibs-cd.png" height="100" width="100" class="cd"></button>
+
+    <p id="result">Click the CD</p>
+
+    <br><br>
+
+    <footer class="animated slideInUp">
+      <a href="https://goo.gl/47fxkw"><img alt="facebook icon" src="assets/facebook_icon.png" height="30" width="35"/></a>
+      <a href="https://goo.gl/qMXqeq"><img alt="twitter icon" src="assets/twitter_icon.png" height="30" width="35"/></a>
+      <a href="https://goo.gl/v44EwW"><img alt="youtube icon" src="assets/youtube_icon.png" height="30" width="35"/></a>
+      <a href="https://goo.gl/hCAaSa"><img alt="instagram icon" src="assets/instagram_icon.png" height="30" width="35"/></a>
+
+      <a class="extra-links" href="demovid.html"> DEMO VIDEO </a>
+      <a class="extra-links" href="report.html"> WRITTEN REPORT </a>
+
+      <a href="https://goo.gl/Xmj4Xm"><img alt="fly south" src="assets/fsmg2.png" height="30" width="35" class="partners"></a>
+      <a href="https://goo.gl/AhC1k4"><img alt="united talent" src="assets/uta2.png" height="30" width="35" class="partners"></a>
+      <img alt="adtr records" src="assets/adtrrecords2.png" height="30" width="35" class="partners">
+    </footer>
+
+    </div>
+
+    <script>
+    // function clickCounter()
+    // {
+    //   if (typeof(Storage) !== "undefined")
+    //   {
+    //     if (localStorage.clickcount)
+    //     {
+    //     localStorage.clickcount = Number(localStorage.clickcount)+1
+    //     }
+    //     else
+    //     {
+    //       localStorage.clickcount = 1;
+    //     }
+    //       document.getElementById("result").innerHTML = "You have clicked the CD " + localStorage.clickcount + " time(s).";
+    //   }
+    //     else
+    //     {
+    //       document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage";
+    //     }
+    //   }
+    //
+    // function changeCursor()
+    // {
+    //   if (localStorage.clickcount == 10)
+    //   {
+    //     $('html').css('cursor', 'url(assets/bad-vibs-cd.png),auto');
+    //     alert("Message");
+    //     console.log('clickcount limit reached');
+    //     localStorage.clear('clickcount');
+    //   }
+    // }
+    </script>
+  </body>
+
+</html>
