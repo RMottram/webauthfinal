@@ -58,10 +58,9 @@ window.onload = function()
       {
         document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage";
       }
-      if (countClicks == 100)
+      if (countClicks == 10)
       {
         $('body').css('cursor', 'url(assets/bad-vibs-cd.png),auto');
-        alert("Message");
         console.log('clickcount limit reached');
       }
     }
