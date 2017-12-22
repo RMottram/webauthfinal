@@ -102,7 +102,7 @@ body
 
 /* MEDIA QUERIES */
 
-@media only screen and (min-width: 736px)
+@media only screen and (max-width: 736px)
 {
   /* DISPLAYS SMALL BANNER AND HIDES LARGE BANNER */
   .top-banner
@@ -719,10 +719,10 @@ footer .partners
 {
 
   box-shadow: 2px 2px 6px black;
-  -webkit-transform: scale(1.2); /* FOR SAFARI AND CHROME */
-  -o-transform: scale(1.2); /* FOR OPERA */
-  -ms-transform: scale(1.2); /* FOR EDGE AND IE */
-  -moz-transform: scale(1.2); /* FOR FIREFOX */
+  -webkit-transform: scale(1.1); /* FOR SAFARI AND CHROME */
+  -o-transform: scale(1.1); /* FOR OPERA */
+  -ms-transform: scale(1.1); /* FOR EDGE AND IE */
+  -moz-transform: scale(1.1); /* FOR FIREFOX */
 
 }
 
