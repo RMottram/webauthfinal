@@ -951,7 +951,6 @@ iframe
   font-size: 1em;
   text-align: center;
   color: #F7F7F7;
-  font-weight: lighter;
 }
 
 .report-images
@@ -960,7 +959,7 @@ iframe
   height: auto;
 }
 
-.report-images img, p
+.report-images .figures, p
 {
   height: auto;
   width: auto;
