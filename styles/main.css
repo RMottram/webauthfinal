@@ -35,6 +35,7 @@ body
   height: 80%;
   margin-left: auto;
   margin-right: auto;
+  /* padding-left: 0; */
 }
 
 .top-banner
@@ -160,13 +161,13 @@ body
 .grid
 {
   font-size: 1.2em;
-  grid-gap: 10px;
   overflow: hidden;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows:1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
   grid-template-areas:
 
+  /* SMALL SCREENS */
   "hero hero hero hero"
   "image1 image1 image1 image1"
   "text1 text1 text1 text1"
@@ -188,13 +189,13 @@ body
   height: 20em;
 }
 
-.hero img
+.hero
 {
   display: block;
   width: 100vh;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 5em;
+  /* padding-top: 5em; */
 }
 
 .image1
@@ -325,6 +326,7 @@ body
 
 @media screen and (min-width: 736px)
 {
+  /* LARGE SCREENS */
   .grid
   {
     font-size: 1.6em;
@@ -719,10 +721,10 @@ footer .partners
 {
 
   box-shadow: 2px 2px 6px black;
-  -webkit-transform: scale(1.1); /* FOR SAFARI AND CHROME */
-  -o-transform: scale(1.1); /* FOR OPERA */
-  -ms-transform: scale(1.1); /* FOR EDGE AND IE */
-  -moz-transform: scale(1.1); /* FOR FIREFOX */
+  -webkit-transform: scale(1.2); /* FOR SAFARI AND CHROME */
+  -o-transform: scale(1.2); /* FOR OPERA */
+  -ms-transform: scale(1.2); /* FOR EDGE AND IE */
+  -moz-transform: scale(1.2); /* FOR FIREFOX */
 
 }
 
@@ -926,3 +928,43 @@ iframe
 }
 
 /* REPORT PAGE END */
+
+.report-grid
+{
+  font-size: 1.6em;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows:1fr 1fr;
+  grid-template-areas:
+  ". report-content report-content ."
+  "report-images report-images report-images report-images"
+}
+
+.report-content
+{
+  grid-area: report-content;
+  height: auto;
+}
+
+.report-content p, h4
+{
+  font-size: 1em;
+  text-align: center;
+  color: #F7F7F7;
+  font-weight: lighter;
+}
+
+.report-images
+{
+  grid-area: report-images;
+  height: auto;
+}
+
+.report-images img, p
+{
+  height: auto;
+  width: auto;
+  text-align: center;
+  color: #F7F7F7;
+  font-weight: lighter;
+}

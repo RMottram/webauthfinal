@@ -45,56 +45,68 @@
     <!-- BANNER FOR SMALLER SCREENS -->
     <img alt="small screen banner" src="assets/adtrslant.png" class="small-screen-banner animated slideInDown">
 
-    <!-- START OF REPORT -->
-    <div class="report animated fadeInLeft">
+      <div class="report-grid">
 
-      <h4>Strengths and Weaknesses of Current Web Specifications and Standards Over Previous Versions</h4>
+        <div class="report-content">
+          <h4>Strengths and Weaknesses of Current Web Specifications and Standards Over Previous Versions</h4>
 
-      <p class="heading"><strong>Introduction</strong></p>
-        <p> This report will be based on the key differences between the two HTML versions, HTML 4 and HTML 5. The strengths and weaknesses of HTML 5 over HTML 4 will be reviewed with some example code to visually show the differences.</p>
+          <p class="heading"><strong>Introduction</strong></p>
+            <p> This report will be based on the key differences between the two HTML versions, HTML 4 and HTML 5. The strengths and weaknesses of HTML 5 over HTML 4 will be reviewed with some example code to visually show the differences.</p>
 
-      <p class="heading"><strong>HTML 4</strong></p>
-      <p>HTML 4 was released in 1997, since then there has been substantial improvements with the introduction of HTML 5. One key difference was allowing web authors to control presentational elements with CSS using syntax such as <code>center</code>, <code>font</code> and <code>strike</code> (Duckett, 2011. 179).</p>
+          <p class="heading"><strong>HTML 4</strong></p>
+          <p>HTML 4 was released in 1997, since then there has been substantial improvements with the introduction of HTML 5. One key difference was allowing web authors to control presentational elements with CSS using syntax such as <code>center</code>, <code>font</code> and <code>strike</code> (Duckett, 2011. 179).</p>
 
-      <p>The current iteration is HTML 5 which was officially announced as complete back in 2015 by the World Wide Web Consortium (W3C) and since then, the adoption rate for modern web pages has increased with companies like Facebook, YouTube, Amazon and Google now using the new standard to enhance their web presence (Singh, 2015). HTML 5 brings us new elements to help integrate multimedia such as <code>video</code>, <code>sound </code> and <code>canvas</code> just to name a few. HTML 5 also delivers semantic elements to help developers and the browsers to understand what is going on and how the code is structured. Semantic elements are almost plain English what is going on within the HTML code. Some examples of semantic elements are <code>header</code>, <code>footer</code>, <code>nav</code>, <code>article</code> and <code>figure</code> (Christian, 2017).</p>
+          <p>The current iteration is HTML 5 which was officially announced as complete back in 2015 by the World Wide Web Consortium (W3C) and since then, the adoption rate for modern web pages has increased with companies like Facebook, YouTube, Amazon and Google now using the new standard to enhance their web presence (Singh, 2015). HTML 5 brings us new elements to help integrate multimedia such as <code>video</code>, <code>sound </code> and <code>canvas</code> just to name a few. HTML 5 also delivers semantic elements to help developers and the browsers to understand what is going on and how the code is structured. Semantic elements are almost plain English what is going on within the HTML code. Some examples of semantic elements are <code>header</code>, <code>footer</code>, <code>nav</code>, <code>article</code> and <code>figure</code> (Christian, 2017).</p>
 
-      <p>This shows one of the many advantages HTML 5 has over HTML 4 because previously developers would constantly re-use <code>div</code> tags and assign specific class and ID’s to differentiate them from others. With all the <code>div</code> tags present it would have gotten complicated and hard to understand what is what at a first glance, but now that is all changed with the semantic elements.</p>
+          <p>This shows one of the many advantages HTML 5 has over HTML 4 because previously developers would constantly re-use <code>div</code> tags and assign specific class and ID’s to differentiate them from others. With all the <code>div</code> tags present it would have gotten complicated and hard to understand what is what at a first glance, but now that is all changed with the semantic elements.</p>
 
-      <p><i>Image 1</i> is a website where one of its pages has consistent uses of the <code>div</code> tag and a particular class or ID assigned to it to tell it apart from the others. You can also see that the page uses the <code>center</code> tag a few times, this shows that the website is not utilising the most up-to-date and newly recognised HTML standards to help enhance the websites usability and interoperability. If you compare this website to the website in <i>Image 2</i>, you will see that it still uses the div tag but it also contains some of the new HTML 5 semantic elements like <code>nav</code>, <code>header</code>, <code>footer</code> and <code>section</code>.</p>
+          <p><i>Image 1</i> is a website where one of its pages has consistent uses of the <code>div</code> tag and a particular class or ID assigned to it to tell it apart from the others. You can also see that the page uses the <code>center</code> tag a few times, this shows that the website is not utilising the most up-to-date and newly recognised HTML standards to help enhance the websites usability and interoperability. If you compare this website to the website in <i>Image 2</i>, you will see that it still uses the div tag but it also contains some of the new HTML 5 semantic elements like <code>nav</code>, <code>header</code>, <code>footer</code> and <code>section</code>.</p>
 
-      <p>HTML 5 brings a more up-to-date technology that is fairly similar to the cookies technology known as local storage. The difference between local storage and cookies is that cookies are small chunks of data sent over by a server to be stored locally to the user’s device whereas local storage is executed inside the browser using JavaScript and not sent to any server making local storage safer as it never leaves the user’s device (Jenkov, 2016). Properties set by the webpage in a user’s local storage can only be read by other pages that share the initial web domain name, so for example if Facebook locally stored properties onto a user’s computer, only subsequent Facebook pages can access them properties and no other website like Twitter, Amazon and BBC News.</p>
+          <p>HTML 5 brings a more up-to-date technology that is fairly similar to the cookies technology known as local storage. The difference between local storage and cookies is that cookies are small chunks of data sent over by a server to be stored locally to the user’s device whereas local storage is executed inside the browser using JavaScript and not sent to any server making local storage safer as it never leaves the user’s device (Jenkov, 2016). Properties set by the webpage in a user’s local storage can only be read by other pages that share the initial web domain name, so for example if Facebook locally stored properties onto a user’s computer, only subsequent Facebook pages can access them properties and no other website like Twitter, Amazon and BBC News.</p>
 
-      <p>There are some practices that if they were done in HTML now, they would be ridiculed because they are now known as bad practices. One example of which is to write styling and JavaScript code within the HTML file of a webpage inside the corresponding tags, <code>style</code> and <code>script</code>. These have the terms in-line styling and in-line scripting and the reason it is known to be bad practice now because for one it can make the HTML file laboriously hard to read and possibly understand with all the code compiled into one file. The second reason is that you lose any flexibility when it comes to changing styles and scripts if they are set within the HTML file. This is because the code within the source file has a higher priority than code that is in a CSS file for example. If an image was declared in HTML and was set a height and width for the image still in the HTML file, any CSS that targets that images height and width will have no effect forcing yourself to change it in the source file or delete it overall and declare the size in the CSS file.</p>
+          <p>There are some practices that if they were done in HTML now, they would be ridiculed because they are now known as bad practices. One example of which is to write styling and JavaScript code within the HTML file of a webpage inside the corresponding tags, <code>style</code> and <code>script</code>. These have the terms in-line styling and in-line scripting and the reason it is known to be bad practice now because for one it can make the HTML file laboriously hard to read and possibly understand with all the code compiled into one file. The second reason is that you lose any flexibility when it comes to changing styles and scripts if they are set within the HTML file. This is because the code within the source file has a higher priority than code that is in a CSS file for example. If an image was declared in HTML and was set a height and width for the image still in the HTML file, any CSS that targets that images height and width will have no effect forcing yourself to change it in the source file or delete it overall and declare the size in the CSS file.</p>
 
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.lorem</p>
+          <p class="heading"><strong>W3C Markup Validation</strong></p>
+          <p>The screenshots 3-14 will illustrate the validity of my HTML markup for my website. This test examines how well coded my HTML documents are and shows any warnings, errors and suggestions how to fix any of these issues.</p>
 
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.lorem</p>
+          <p class="heading"><strong>Website Interoperability</strong></p>
+          <p>In order to make my website fit the requirements of being a responsive site, I used a combination of using the viewport width feature in partnership with media queries and CSS grids. The combination of these features means that when a user changes the size of the browser window, or visit the size on a mobile phone, the content will adapt to the screen size and some of which will disappear and other content will appear in their place to suit the smaller screen devices. You can find some of the code I used below.</p>
 
-      <!-- REPORT IMAGES START -->
-      <div id="report-images">
+          <p>CSS grids is a new technique to create responsive websites and I decided to use it for some of my pages that I though that could benefit like the   page this report will be on and the band member page</p>
 
-        <figure>
+          <p class="heading"><strong>Reference List</strong></p>
+          <p>Duckett, J. (2011) <i>HTML & CSS Design and Build Websites.</i> Indianapolis, Indiana, USA: John Wiley & Sons <br><br>
+
+          Singh, S. (2015) <i>HTML 5 On the Rise: No Longer Ahead of Its Time.</i> Bay Area: Tech Crunch. Available from https://techcrunch.com/2015/10/28/html5-on-the-rise-no-longer-ahead-of-its-time/ [Accessed 23 November 2017]. <br><br>
+
+          Christian, W. (2017) <i>HTML 5 Semantic Elements.</i> [Lecture]. Web Authoring CMP1130M-1718, University of Lincoln, 10 October 2017. Available from https://wayne-christian.github.io/WEB-AUTH-PRESENTATIONS/week3.html#/30 [Accessed 23 November 2017].
+
+          <br><br>
+
+          Jenkov, J. (2016) <i>HTML 5 Local Storage.</i> Jakob Jenkov. Available from http://tutorials.jenkov.com/html5/local-storage.html [Accessed 23 November 2017].</p> <br><br>
+        </div>
+
+        <div class="report-images">
           <img alt="figure 1 screenshot" class="figures" src="assets/reportimage1.png"><p><i>Figure 1</i></p>
           <img alt="figure 2 screenshot" class="figures" src="assets/reportimage2.png"><p><i>Figure 2</i></p>
-        </figure>
+          <img alt="figure 3 screenshot" class="figures" src="assets/reportimage3.png"><p><i>Figure 3</i></p>
+          <img alt="figure 4 screenshot" class="figures" src="assets/reportimage4.png"><p><i>Figure 4</i></p>
+          <img alt="figure 5 screenshot" class="figures" src="assets/reportimage5.png"><p><i>Figure 5</i></p>
+          <img alt="figure 6 screenshot" class="figures" src="assets/reportimage6.png"><p><i>Figure 6</i></p>
+          <img alt="figure 7 screenshot" class="figures" src="assets/reportimage7.png"><p><i>Figure 7</i></p>
+          <img alt="figure 8 screenshot" class="figures" src="assets/reportimage8.png"><p><i>Figure 8</i></p>
+          <img alt="figure 9 screenshot" class="figures" src="assets/reportimage9.png"><p><i>Figure 9</i></p>
+          <img alt="figure 10 screenshot" class="figures" src="assets/reportimage10.png"><p><i>Figure 10</i></p>
+          <img alt="figure 11 screenshot" class="figures" src="assets/reportimage11.png"><p><i>Figure 11</i></p>
+          <img alt="figure 12 screenshot" class="figures" src="assets/reportimage12.png"><p><i>Figure 12</i></p>
+          <img alt="figure 13 screenshot" class="figures" src="assets/reportimage13.png"><p><i>Figure 13</i></p>
+        </div>
+
+
+
+
 
       </div>
-      <!-- REPORT IMAGES END -->
-
-      <!-- REFERENCES LIST START -->
-      <p class="heading"><strong>Reference List</strong></p>
-      <p>Duckett, J. (2011) <i>HTML & CSS Design and Build Websites.</i> Indianapolis, Indiana, USA: John Wiley & Sons <br><br>
-
-      Singh, S. (2015) <i>HTML 5 On the Rise: No Longer Ahead of Its Time.</i> Bay Area: Tech Crunch. Available from https://techcrunch.com/2015/10/28/html5-on-the-rise-no-longer-ahead-of-its-time/ [Accessed 23 November 2017]. <br><br>
-
-      Christian, W. (2017) <i>HTML 5 Semantic Elements.</i> [Lecture]. Web Authoring CMP1130M-1718, University of Lincoln, 10 October 2017. Available from https://wayne-christian.github.io/WEB-AUTH-PRESENTATIONS/week3.html#/30 [Accessed 23 November 2017]. <br><br>
-
-      Jenkov, J. (2016) <i>HTML 5 Local Storage.</i> Jakob Jenkov. Available from http://tutorials.jenkov.com/html5/local-storage.html [Accessed 23 November 2017].</p> <br><br>
-      <!-- REFERENCES END -->
-      </div>
-
-      <!-- REPORT END -->
-
 
       <!-- FOOTER START -->
       <footer class="animated slideInUp">
