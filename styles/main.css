@@ -934,10 +934,12 @@ iframe
   font-size: 1.6em;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows:1fr 1fr;
+  grid-template-rows:1fr 1fr 1fr;
   grid-template-areas:
+  /* SMALL SCREENS */
   ". report-content report-content ."
   "report-images report-images report-images report-images"
+  "report-images2 report-images2 report-images2 report-images2"
 }
 
 .report-content
@@ -959,11 +961,44 @@ iframe
   height: auto;
 }
 
-.report-images .figures, p
+.report-images2
+{
+  grid-area: report-images2;
+  height: auto;
+}
+
+.report-images, .report-images2, .figures, p
 {
   height: auto;
   width: auto;
   text-align: center;
   color: #F7F7F7;
   font-weight: lighter;
+}
+
+.report-images img, .report-images2 img
+{
+  height: auto;
+  width: 50%;
+}
+
+@media only screen and (min-width: 736px)
+{
+  /* LARGER SCREENS */
+  .report-grid
+  {
+    font-size: 1.6em;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows:1fr 1fr 1fr;
+    grid-template-areas:
+    ". report-content report-content ."
+    "report-images report-images report-images2 report-images2"
+    "report-images report-images report-images2 report-images2"
+  }
+
+  .report-images2
+  {
+    display: block;
+  }
 }
