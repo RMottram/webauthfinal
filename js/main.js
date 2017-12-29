@@ -11,6 +11,8 @@ window.onload = function()
     var colour = localStorage.getItem('background');
     console.log(colour);
     $('html').css("background-color", colour);
+    $('body').css("background-color", colour);
+
   }
 
   $('#playAudio1').click(playAudio);
