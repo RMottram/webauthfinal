@@ -125,12 +125,12 @@ window.onload = function()
     document.getElementById('myAudio4').pause();
   }
 
-  // // TOGGLE BETWEEN SHOWING AND HIDING MOBILE NAV
+  // TOGGLE BETWEEN SHOWING AND HIDING MOBILE NAV
   // function mobileNav()
   // {
   //   document.getElementById("myDropdown-mob").classList.toggle("show");
   // }
-  
+
   // CLOSES NAV WHEN CLICKS OUTSIDE BOX
   window.onclick = function(event)
   {
