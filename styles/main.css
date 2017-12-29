@@ -498,6 +498,78 @@ background-size: cover;
 
 /* END NAVBAR */
 
+/* MOBILE NAV */
+
+.dropbtn-mob
+{
+  background-color: #46325A;
+  color: #F7F7F7;
+  padding: 16px;
+  font-size: 16px;
+  border-color: black;
+  cursor: pointer;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.dropbtn-mob:hover, .dropbtn-mob:focus
+{
+  background-color: #46324A;
+}
+
+.dropdown-mob
+{
+  position: relative;
+  display: none;
+  font-family: 'helvetica-bold', sans-serif;
+  text-align: center;
+}
+
+.dropdown-content-mob
+{
+  display: none;
+  position: relative;
+  background-color: #FFF;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.6);
+  z-index: 1;
+}
+
+.dropdown-content-mob a
+{
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-mob a:hover
+{
+  background-color: #DC4B8C
+}
+
+.show
+{
+  display: block;
+}
+
+/* END MOBILE NAV */
+
+@media screen and (max-width: 736px)
+{
+  nav
+  {
+    display: none;
+  }
+
+  .dropdown-mob
+  {
+    display: block;
+  }
+}
+
 /* START HOME PAGE */
 
 /* FLIP CARD EFFECT START */

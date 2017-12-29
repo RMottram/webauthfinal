@@ -80,18 +80,6 @@ window.onload = function()
 
   init();
 
-  // playAudio();
-  // stopAudio();
-  //
-  // playAudio2();
-  // stopAudio2();
-  //
-  // playAudio3();
-  // stopAudio3();
-  //
-  // playAudio4();
-  // stopAudio4();
-
   function init()
   {
     console.log("Ready");
@@ -135,5 +123,29 @@ window.onload = function()
   function stopAudio4()
   {
     document.getElementById('myAudio4').pause();
+  }
+
+  // // TOGGLE BETWEEN SHOWING AND HIDING MOBILE NAV
+  // function mobileNav()
+  // {
+  //   document.getElementById("myDropdown-mob").classList.toggle("show");
+  // }
+  
+  // CLOSES NAV WHEN CLICKS OUTSIDE BOX
+  window.onclick = function(event)
+  {
+    if (!event.target.matches('.dropbtn-mob'))
+    {
+      var dropdowns =   document.getElementsByClassName("dropdown-content-mob");
+      var i;
+      for (i = 0; i < dropdowns.length; i++)
+      {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show'))
+        {
+          openDropdown.classList.remove('show');
+        }
+      }
+    }
   }
 }
