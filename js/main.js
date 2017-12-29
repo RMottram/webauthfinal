@@ -10,9 +10,7 @@ window.onload = function()
   {
     var colour = localStorage.getItem('background');
     console.log(colour);
-    // alert('Colour should be '+colour);
-    $('body').css("background-color", colour);
-    $('nav').css("background-color", colour);
+    $('html').css("background-color", colour);
   }
 
   $('#playAudio1').click(playAudio);
@@ -58,25 +56,15 @@ window.onload = function()
       {
         document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage";
       }
-      if (countClicks == 10)
+      if (countClicks == 390)
       {
-        $('body').css('cursor', 'url(assets/bad-vibs-cd.png),auto');
+        $("body").css('cursor', 'url(assets/bad-vibs-cd-mouse.png) ,auto');
         console.log('clickcount limit reached');
+        alert("Easter Egg Activated!");
       }
     }
 
-  function changeCursor()
-  {
-    if (localStorage.clickcount == 10)
-    {
-      $('html').css('cursor', 'url(assets/bad-vibs-cd.png),auto');
-      alert("Message");
-      console.log('clickcount limit reached');
-      localStorage.clear('clickcount');
-    }
-  }
-
-  console.log(localStorage.clickcount);
+  console.log(countClicks);
 
   init();
 
