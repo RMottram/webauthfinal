@@ -31,8 +31,9 @@ body
 {
   display: none; /* OUT OF SIGHT UNTIL MEDIA QUERY KICKS IN */
   position: relative;
-  width: auto;
-  height: 50%;
+  margin-top: 10%;
+  width: 60%;
+  height: 60%;
 }
 
 .top-banner
@@ -44,7 +45,7 @@ body
   margin-right: auto;
   margin-top: 5px;
   border-radius: 8px;
-  width: auto;
+  width: 100%;
   height: auto;
 
 }
