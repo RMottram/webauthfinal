@@ -166,7 +166,7 @@ body
   overflow: hidden;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows:1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows:1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-areas:
 
   /* SMALL SCREENS */
@@ -311,7 +311,7 @@ body
   height: 30em;
   background-image: url(../assets/a-day-to-remember.jpg);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: 100%;
 }
 
 .bandtext
