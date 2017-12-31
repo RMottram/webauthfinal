@@ -174,7 +174,6 @@ body
   grid-template-areas:
 
   /* SMALL SCREENS */
-  "hero hero hero hero"
   "image1 image1 image1 image1"
   "text1 text1 text1 text1"
   "image2 image2 image2 image2"
@@ -188,21 +187,6 @@ body
   "bandimage bandimage bandimage bandimage"
   "bandtext bandtext bandtext bandtext";
 }
-
-/* .hero
-{
-  grid-area: hero;
-  height: 20em;
-}
-
-.hero
-{
-  display: block;
-  width: 100vh;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 3em;
-} */
 
 .image1
 {
