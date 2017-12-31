@@ -170,11 +170,11 @@ body
   overflow: hidden;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows:1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows:1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-areas:
 
   /* SMALL SCREENS */
-  "hero hero hero hero"
+  /* "hero hero hero hero" */
   "image1 image1 image1 image1"
   "text1 text1 text1 text1"
   "image2 image2 image2 image2"
@@ -189,7 +189,7 @@ body
   "bandtext bandtext bandtext bandtext";
 }
 
-.hero
+/* .hero
 {
   grid-area: hero;
   height: 20em;
@@ -202,7 +202,7 @@ body
   margin-left: auto;
   margin-right: auto;
   padding-top: 3em;
-}
+} */
 
 .image1
 {
