@@ -170,7 +170,7 @@ body
   grid-template-areas:
 
   /* SMALL SCREENS */
-  "hero hero hero hero"
+  /* "hero hero hero hero" */
   "image1 image1 image1 image1"
   "text1 text1 text1 text1"
   "image2 image2 image2 image2"
