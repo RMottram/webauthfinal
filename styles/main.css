@@ -166,6 +166,7 @@ body
 
 .grid
 {
+  grid-row-gap: 10px;
   font-size: 1.2em;
   overflow: hidden;
   display: grid;
@@ -186,6 +187,21 @@ body
   "text5 text5 text5 text5"
   "bandimage bandimage bandimage bandimage"
   "bandtext bandtext bandtext bandtext";
+}
+
+.hero
+{
+  grid-area: hero;
+  height: 20em;
+}
+
+.hero
+{
+  display: block;
+  width: 100vh;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 3em;
 }
 
 .image1
@@ -299,7 +315,7 @@ body
   height: 30em;
   background-image: url(../assets/a-day-to-remember.jpg);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: 100%;
 }
 
 .bandtext
