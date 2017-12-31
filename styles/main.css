@@ -48,7 +48,7 @@ body
   margin-right: auto;
   margin-top: 5px;
   border-radius: 8px;
-  width: 100%;
+  width: auto;
   height: auto;
 
 }
@@ -161,7 +161,6 @@ body
   grid-template-areas:
 
   /* SMALL SCREENS */
-  /* "hero hero hero hero" */
   "image1 image1 image1 image1"
   "text1 text1 text1 text1"
   "image2 image2 image2 image2"
@@ -174,21 +173,6 @@ body
   "text5 text5 text5 text5"
   "bandimage bandimage bandimage bandimage"
   "bandtext bandtext bandtext bandtext";
-}
-
-.hero
-{
-  grid-area: hero;
-  height: 20em;
-}
-
-.hero
-{
-  display: block;
-  width: 100vh;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 3em;
 }
 
 .image1
@@ -325,9 +309,9 @@ body
     font-size: 1.6em;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas:
-    "hero hero hero hero"
+
     "image1 image1 text1 text1"
     "text2 text2 image2 image2"
     "image3 image3 text3 text3"
@@ -341,11 +325,6 @@ body
   {
     height: 50%;
     width: 50%;
-  }
-
-  .hero
-  {
-    display: none;
   }
 }
 
