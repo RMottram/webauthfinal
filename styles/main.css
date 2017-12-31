@@ -52,6 +52,15 @@ body
 
 }
 
+.small-banner
+{
+  display: none; /* OUT OF SIGHT UNTIL MEDIA QUERY KICKS IN */
+  position: relative;
+  margin-top: 10%;
+  width: 60%;
+  height: 60%;
+}
+
 .small-screen-album
 {
   display: none;
@@ -112,6 +121,11 @@ body
   }
 
   .small-screen-banner
+  {
+    display: block;
+  }
+
+  .small-banner
   {
     display: block;
   }
