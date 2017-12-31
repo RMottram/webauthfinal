@@ -126,11 +126,6 @@ body
     display: block;
   }
 
-  .small-banner
-  {
-    display: inline-block;
-  }
-
   /* HIDES VIDEO FOR SMALL SCREENS */
   .video
   {
@@ -154,7 +149,7 @@ body
     display: none;
   }
 
-  /* HIDES THE COLOUR PICKER AND SPINNING ALBUM BUTTON FOR SMALL SCREENS */
+  /* HIDES THE COLOUR PICKER FOR SMALL SCREENS */
   #result, #colourPickerText, button
   {
     display: none;
@@ -175,6 +170,7 @@ body
   grid-template-areas:
 
   /* SMALL SCREENS */
+  "hero hero hero hero"
   "image1 image1 image1 image1"
   "text1 text1 text1 text1"
   "image2 image2 image2 image2"
@@ -315,7 +311,7 @@ body
   height: 30em;
   background-image: url(../assets/a-day-to-remember.jpg);
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: contain;
 }
 
 .bandtext
@@ -338,7 +334,7 @@ body
     font-size: 1.6em;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows:0.5fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas:
     "hero hero hero hero"
     "image1 image1 text1 text1"
@@ -354,6 +350,11 @@ body
   {
     height: 50%;
     width: 50%;
+  }
+
+  .hero
+  {
+    display: none;
   }
 }
 
