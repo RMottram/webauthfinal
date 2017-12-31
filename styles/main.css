@@ -311,7 +311,7 @@ body
   height: 30em;
   background-image: url(../assets/a-day-to-remember.jpg);
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: 100% 100%;
 }
 
 .bandtext
