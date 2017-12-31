@@ -32,8 +32,8 @@ body
   display: none; /* OUT OF SIGHT UNTIL MEDIA QUERY KICKS IN */
   position: relative;
   margin-top: 10%;
-  width: 60%;
-  height: 60%;
+  width: 100%;
+  height: 100%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -56,9 +56,10 @@ body
 {
   display: none; /* OUT OF SIGHT UNTIL MEDIA QUERY KICKS IN */
   position: relative;
-  margin-top: 10%;
-  width: 60%;
-  height: 60%;
+  width: 80%;
+  height: 80%;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .small-screen-album
@@ -127,7 +128,7 @@ body
 
   .small-banner
   {
-    display: block;
+    display: inline-block;
   }
 
   /* HIDES VIDEO FOR SMALL SCREENS */
