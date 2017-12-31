@@ -58,7 +58,7 @@ window.onload = function()
       {
         document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage";
       }
-      if (countClicks == 390)
+      if (countClicks == 5)
       {
         $("body").css('cursor', 'url(assets/bad-vibs-cd-mouse.png) ,auto');
         console.log('clickcount limit reached');
